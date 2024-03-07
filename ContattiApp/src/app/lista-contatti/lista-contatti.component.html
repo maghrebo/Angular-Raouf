@@ -1,57 +1,13 @@
-
-<div *ngFor="let contatto of contatti" class="contatto" [ngStyle]="{ 'background-color': contatto.colorePreferito}">
-    <img [src]="'assets/' + contatto.colorePreferito + '.png'" alt="Immagine profilo">
-    <div>
-      <p>{{ contatto.nome }} {{ contatto.cognome }}</p>
-      <p>{{ contatto.telefono }}</p>
-      <div [ngStyle]="{ 'background-color': contatto.isOnline ? 'green' : 'red' }" class="pallino"></div>
-    </div>
-</div>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
 
 
-
-
-
-
-
-
-
-
-<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
-<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
-<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
-<!------ Include the above in your HEAD tag ---------->
-
-<div class="container" *ngFor="let contatto of contatti" [ngStyle]="{ 'background-color': contatto.colorePreferito}">
-	<div class="row">
-		<div class="col">
-			<div class="weather-card one">
-				<div class="top">
-					<div class="wrapper">
-						
-					</div>
-				</div>
-				<div class="bottom">
-					<div class="wrapper">
-						<ul class="forecast">
-							<a href="javascript:;"><span class="lnr lnr-chevron-up go-up"></span></a>
-							<li class="active">
-								<span class="date">Nome</span>
-								<span class="lnr lnr-sun condition">
-									<span class="temp">{{ contatto.nome }} {{ contatto.cognome }}</span>
-								</span>
-							</li>
-							<li>
-								<span class="date">Numero</span>
-								<span class="lnr lnr-cloud condition">
-									<span class="temp">{{ contatto.telefono }}</span>
-								</span>
-							</li>
-						</ul>
-					</div>
-				</div>
-			</div>
-		</div>
-
+<div class="card" style="width:400px" *ngFor="let contatto of contatti" [ngStyle]="{ 'background-color': contatto.colorePreferito}">
+	<img class="card-img-top" src="{{ contatto.immagine }}" alt="Card image">
+	<div class="card-body">
+	  <h4 class="card-title">{{ contatto.nome }} {{ contatto.cognome }}</h4>
+	  <div *ngIf="contatto.isOnline" class="pallino-verde"></div>
+      <div *ngIf="!contatto.isOnline" class="pallino-rosso"></div>
+	  <p class="card-text">{{ contatto.telefono }}</p>
+	  <a href="#" class="btn btn-primary">See Profile</a>
 	</div>
 </div>
