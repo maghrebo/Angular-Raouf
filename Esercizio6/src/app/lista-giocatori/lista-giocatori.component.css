@@ -1,0 +1,23 @@
+body {
+    background-color: black;
+    display: flex;
+    justify-content: center;
+}
+
+
+h3 {
+    color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: center;
+    font-size: 45px;
+}
+
+p {
+    color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: center;
+}
+
+.container {
+    flex-direction: row;
+}
