@@ -8,5 +8,12 @@ import { Component } from '@angular/core';
   styleUrl: './lista-giocatori.component.css'
 })
 export class ListaGiocatoriComponent {
-
+  giocatori = [
+    
+    {nome: 'ProgamingStudioHD'},
+    {nome: 'GTASERIES Videos'},
+    {nome: 'MRBOSSFTW'},
+    {nome: 'echno Gamerz'}
+    
+  ]
 }
