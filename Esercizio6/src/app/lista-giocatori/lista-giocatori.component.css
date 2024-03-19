@@ -4,13 +4,19 @@ body {
     justify-content: center;
 }
 
-
-h3 {
-    color: white;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    text-align: center;
-    font-size: 45px;
+@font-face {
+    font-family: 'GTA Font';
+    src: url('pricedown bl.ttf') format('truetype');
+    /* Sostituisci 'percorso/del/font/GTA.ttf' con il percorso reale del tuo file del font */
 }
+
+.titolo_gta {
+    font-family: 'GTA Font', sans-serif;
+    color: white;
+    text-align: center;
+    font-size: 70px;
+}
+
 
 p {
     color: white;
@@ -21,3 +27,19 @@ p {
 .container {
     flex-direction: row;
 }
+
+.container h3 {
+    color: red;
+}
+
+h4 strong {
+    font-size: 25px;
+}
+
+.card-title {
+    font-family: 'GTA Font';
+    font-size: 45px;
+    text-align: center;
+}
+
+
