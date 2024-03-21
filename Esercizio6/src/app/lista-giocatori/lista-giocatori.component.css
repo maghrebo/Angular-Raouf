@@ -1,4 +1,4 @@
-body {
+.body {
     background-color: black;
     
 }
@@ -55,6 +55,11 @@ h4 strong {
 }
 
 .card-img {
-    height: 250px; 
+    height: 280px; 
     width: 200px;
+}
+
+.bottone {
+    display: flex;
+    justify-content: center;
 }
