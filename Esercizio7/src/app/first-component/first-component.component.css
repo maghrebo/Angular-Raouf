@@ -1,0 +1,70 @@
+.body {
+    background-color: black;
+    
+}
+
+.immagine-grande {
+    display: flex;
+    justify-content: center;
+}
+
+.immagine-titolo {
+    display: flex;
+    justify-content: center;
+}
+
+.immagine-titolo img {
+    width: 40%;
+}
+
+.immagine-grande img {
+    width: 60%;
+}
+
+p {
+    color: white;
+    font-size: 30px;
+    text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.button-container {
+    display: flex;
+    justify-content: center; /* Distribuisce gli elementi equamente lungo l'asse principale */
+}
+  
+.starter-button {
+    width: 300px;
+    margin: 0 60px;
+    border-radius: 10px;
+    height: 250px;
+    font-family: 'Pokemon Font Solid', 'Pokemon\ Hollow.ttf' ;
+    color: yellow;
+    font-size: 50px;
+    background-color: black;
+}
+
+@font-face {
+    font-family: 'Pokemon Font Solid';
+    src: url('Pokemon\ Solid.ttf') format('truetype');
+    /* Sostituisci 'percorso/del/font/GTA.ttf' con il percorso reale del tuo file del font */
+}
+
+@font-face {
+    font-family: 'Pokemon Font Hollow';
+    src: url('Pokemon\ Hollow.ttf') format('truetype');
+    /* Sostituisci 'percorso/del/font/GTA.ttf' con il percorso reale del tuo file del font */
+}
+
+#bottone1 {
+    background-color: rgb(28, 71, 24);
+}
+
+#bottone2 {
+    background-color: rgb(87, 25, 25);
+}
+
+#bottone3 {
+    background-color: rgb(27, 24, 71);
+}
+  
