@@ -34,7 +34,7 @@ p {
 }
 
 .container h3 {
-    color: red;
+    color: black;
 }
 
 h4 strong {
@@ -55,11 +55,23 @@ h4 strong {
 }
 
 .card-img {
-    height: 280px; 
+    height: 285px; 
     width: 200px;
 }
 
 .bottone {
     display: flex;
     justify-content: center;
+}
+
+.franklin {
+    background-color: green; /* Colore per Franklin */
+}
+  
+.michael {
+  background-color: rgba(0, 110, 255, 0.76); /* Colore per Michael */
+}
+
+.trevor {
+  background-color: orange; /* Colore per Trevor */
 }
