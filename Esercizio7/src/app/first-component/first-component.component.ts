@@ -12,7 +12,7 @@ export class FirstComponentComponent {
 
   info: boolean = false;
 
-  button_testo_1 = "Snivy (di tipo Erba)";
+  button_testo_1 = "Snivy";
   button_testo_2 = "Tepig (di tipo Fuoco)";
   button_testo_3 = "Oshawott (di tipo Acqua)"
 

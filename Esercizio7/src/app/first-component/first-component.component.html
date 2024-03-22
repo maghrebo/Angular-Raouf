@@ -41,14 +41,22 @@
           <button [innerText]="button_testo_1" class="starter-button" id="bottone1" (click)="mostra_info()"></button>
           <br>
           <div id="infoContainer" class="infoContainer" *ngIf="info">
-            <!-- Informazioni sul Pokémon -->
-            Nome: Pikachu <br>
-            Tipo: Elettrico
+            <br>
+            <img src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/495.png" alt=""><br>
+            Nome: Snivy <br>
+            Tipo: Erba
           </div>
         </div>
 
-        <div>
+        <div class="personaggio2">
           <button [innerText]="button_testo_2" class="starter-button" id="bottone2"></button>
+          <br>
+          <div id="infoContainer" class="infoContainer" *ngIf="info">
+            <br>
+            <img src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/498.png" alt=""><br>
+            Nome: Tepig <br>
+            Tipo: Fuoco
+          </div>
         </div>
 
         <div>
