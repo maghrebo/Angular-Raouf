@@ -4,7 +4,7 @@ import { Component } from '@angular/core';
 @Component({
   selector: 'app-first-component',
   standalone: true,
-  imports: [CommonModule],
+  imports: [CommonModule,],
   templateUrl: './first-component.component.html',
   styleUrl: './first-component.component.css'
 })
@@ -17,6 +17,7 @@ export class FirstComponentComponent {
   bottone2: boolean = true;
   bottone3: boolean = true;
   partesopra: boolean = true;
+  btnHome: boolean = false;
 
   button_testo_1 = "Snivy";
   button_testo_2 = "Tepig";
@@ -27,6 +28,7 @@ export class FirstComponentComponent {
 
   mostra_info1() {
     this.info1 = !this.info1;
+    this.bottone1 = false;
     this.info2 = false;
     this.info3 = false;
     
@@ -34,15 +36,13 @@ export class FirstComponentComponent {
       this.bottone2 = false
       this.bottone3 = false
       this.partesopra = false
-    } else {
-      this.bottone2 = true
-      this.bottone3 = true
-      this.partesopra = true
-    }
+      this.btnHome = true
+    } 
   }
 
   mostra_info2() {
     this.info2 = !this.info2;
+    this.bottone2 = false;
     this.info1 = false;
     this.info3 = false;
     
@@ -50,15 +50,13 @@ export class FirstComponentComponent {
       this.bottone1 = false
       this.bottone3 = false
       this.partesopra = false
-    } else {
-      this.bottone1 = true
-      this.bottone3 = true
-      this.partesopra = true
-    }
+      this.btnHome = true
+    } 
   }
 
   mostra_info3() {
     this.info3 = !this.info3;
+    this.bottone3 = false;
     this.info2 = false;
     this.info1 = false;
 
@@ -66,12 +64,20 @@ export class FirstComponentComponent {
       this.bottone1 = false
       this.bottone2 = false
       this.partesopra = false
-    } else {
-      this.bottone1 = true
-      this.bottone2 = true
-      this.partesopra = true
-    }
+      this.btnHome = true
+    } 
 
+  }
+
+  nascondi_info() {
+    this.bottone1 = true
+    this.bottone2 = true
+    this.bottone3 = true
+    this.info1 = false
+    this.info2 = false
+    this.info3 = false
+    this.partesopra = true
+    this.btnHome = false
   }
 
 

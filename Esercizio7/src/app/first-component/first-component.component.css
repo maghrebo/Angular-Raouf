@@ -23,6 +23,7 @@
     width: 350px;
     height: 200px;
     margin-top: 100px;
+    margin-left: 20px;
 }
 
 p {
@@ -47,7 +48,7 @@ p {
     font-size: 50px;
     background-color: black;
     -webkit-text-stroke-width: 3px; /* Larghezza del bordo */
-   -webkit-text-stroke-color: blue;
+    -webkit-text-stroke-color: blue;
 }
 
 .starter-button:hover {
@@ -118,5 +119,20 @@ p {
 
 #infoContainer3 {
     color: blue;
+}
+
+#btn-home {
+    font-size: 50px;
+    color: yellow;
+    line-height: 60px;
+    text-align: center;
+    background-color: #ffcb05;
+    border-radius: 20px;
+    font-family: 'Pokemon Font Solid';
+    width: 200px;
+    height: 100px;
+    margin-left: 50px; /* Aggiungi questa proprietà per spostare il pulsante verso destra */
+    -webkit-text-stroke-width: 3px; /* Larghezza del bordo */
+    -webkit-text-stroke-color: blue;
 }
   
