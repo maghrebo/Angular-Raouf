@@ -1,5 +1,6 @@
 <div class="body">
 
+  <div class="parte-sopra" *ngIf="partesopra">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link href="https://fonts.cdnfonts.com/css/pricedown" rel="stylesheet">
   
@@ -32,37 +33,58 @@
         <br>
         mentre si impegnano nel loro viaggio per diventare il campione della Lega Pokémon.
       </p>
+  </div>
+    
 
       <br><br><br><br>
 
       <div class="button-container">
 
         <div class="personaggio1">
-          <button [innerText]="button_testo_1" class="starter-button" id="bottone1" (click)="mostra_info()"></button>
+          <button [innerText]="button_testo_1" *ngIf="bottone1" class="starter-button" id="bottone1" (click)="mostra_info1()" [style.background-color]="colore_bottone1"></button>
           <br>
-          <div id="infoContainer" class="infoContainer" *ngIf="info">
+          <div id="infoContainer1" class="infoContainer" *ngIf="info1">
             <br>
             <img src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/495.png" alt=""><br>
-            Nome: Snivy <br>
-            Tipo: Erba
+            Nome: <strong [innerText]="pokemon[0].nome"></strong><br>
+            Tipo: <strong [innerText]="pokemon[0].tipo"></strong><br>
+            Altezza: <strong [innerText]="pokemon[0].altezza"></strong><br>
+            Peso: <strong [innerText]="pokemon[0].peso"></strong><br>
+            Colore Pokedex: <strong [innerText]="pokemon[0].colore"></strong><br>
+            Cattura: <strong [innerText]="pokemon[0].cattura"></strong>
           </div>
         </div>
 
         <div class="personaggio2">
-          <button [innerText]="button_testo_2" class="starter-button" id="bottone2"></button>
+          <button [innerText]="button_testo_2" *ngIf="bottone2" class="starter-button" id="bottone2" (click)="mostra_info2()" [style.background-color]="colore_bottone2"></button>
           <br>
-          <div id="infoContainer" class="infoContainer" *ngIf="info">
+          <div id="infoContainer2" class="infoContainer" *ngIf="info2">
             <br>
             <img src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/498.png" alt=""><br>
-            Nome: Tepig <br>
-            Tipo: Fuoco
+            Nome: <strong [innerText]="pokemon[1].nome"></strong><br>
+            Tipo: <strong [innerText]="pokemon[1].tipo"></strong><br>
+            Altezza: <strong [innerText]="pokemon[1].altezza"></strong><br>
+            Peso: <strong [innerText]="pokemon[1].peso"></strong><br>
+            Colore Pokedex: <strong [innerText]="pokemon[1].colore"></strong><br>
+            Cattura: <strong [innerText]="pokemon[1].cattura"></strong>
           </div>
         </div>
 
         <div>
-          <button [innerText]="button_testo_3" class="starter-button" id="bottone3"></button>
+          <button [innerText]="button_testo_3" *ngIf="bottone3" class="starter-button" id="bottone3" (click)="mostra_info3()" [style.background-color]="colore_bottone3"></button>
+          <br>
+          <div id="infoContainer3" class="infoContainer" *ngIf="info3">
+            <br>
+            <img src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/501.png" alt=""><br>
+            Nome: <strong [innerText]="pokemon[2].nome"></strong><br>
+            Tipo: <strong [innerText]="pokemon[2].tipo"></strong><br>
+            Altezza: <strong [innerText]="pokemon[2].altezza"></strong><br>
+            Peso: <strong [innerText]="pokemon[2].peso"></strong><br>
+            Colore Pokedex: <strong [innerText]="pokemon[2].colore"></strong><br>
+            Cattura: <strong [innerText]="pokemon[2].cattura"></strong>
+          </div>
         </div>
-        
+
       </div>
 
       <br><br><br><br><br><br><br>
