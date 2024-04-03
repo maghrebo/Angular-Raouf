@@ -1,0 +1,31 @@
+<div class="body">
+
+    <div class="sfondo">
+        <br><br><br><br><br>
+        <h1>AGENZIA DI VACANZE</h1>
+    </div>
+    <p class="descrizione"><br>Benvenuti nell'eclettica oasi di viaggi, dove il mondo diventa il vostro playground e le avventure sono sempre all'orizzonte. <br> Siamo un'agenzia di viaggi che si impegna a trasformare i vostri sogni in realtà, offrendovi esperienze straordinarie in ogni angolo del globo. <br>
+
+        Con il nostro team di esperti viaggiatori e consulenti dedicati, ci impegniamo a creare itinerari personalizzati che soddisfino le vostre esigenze e superino le vostre aspettative. <br>
+        
+        La nostra missione è quella di rendere ogni viaggio un'esperienza indimenticabile, offrendo un servizio attento, dettagliato e su misura. <br>
+        
+        Siate pronti a esplorare, a scoprire e a creare ricordi che dureranno per sempre. Con l'agenzia di viaggi, ogni viaggio è una storia da raccontare.</p>
+
+    <div class="posti">
+        <h2>LE NOSTRE METE PIU VISUALIZZATE</h2>
+
+        <div class="container">
+            <div *ngFor="let destinazione of destinazioni" class="card">
+                <img [src]="destinazione.immagine" alt="Mete turistiche">
+                <div class="card-content">
+                    <h2>{{ destinazione.nome }}</h2>
+                    <p><strong>Stato: </strong>{{ destinazione.stato}}</p>
+                    <p><strong>Capitale: </strong>{{ destinazione.capitale}}</p>
+                    <p><strong>Abitanti: </strong>{{ destinazione.abitanti}}</p>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+</div>
