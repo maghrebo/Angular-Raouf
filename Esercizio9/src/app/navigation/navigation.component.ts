@@ -9,4 +9,17 @@ import { Component } from '@angular/core';
 })
 export class NavigationComponent {
 
+  
+  mostra_home = false
+  mostra_biglietti = false
+
+  home() {
+    this.mostra_home = true;
+  }
+
+  biglietti() {
+    this.mostra_biglietti = true;
+  }
+    
+  
 }
