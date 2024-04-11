@@ -1,1 +1,14 @@
-<p>list works!</p>
+<br><br>
+<div id="container">
+    <div class="card mb-3" *ngFor="let pianeta of pianeti">
+        <img src="{{pianeta.immagine}}" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">{{pianeta.nome}}</h5>
+          <p class="card-text"><strong>Sistema solare: </strong>{{pianeta.sistema_solare | uppercase }}</p>
+          <p class="card-text"><strong>Durata viaggio: </strong>{{pianeta.durata | uppercase }}</p>
+          <p class="card-text"><strong>Spazioporto di Partenza: </strong>{{pianeta.spazioporto | uppercase }}</p>
+          <p class="card-text"><strong>Date viaggio: </strong>{{pianeta.data | uppercase }}</p>
+          <p class="card-text"><strong>Costo: </strong>{{pianeta.costo | currency: 'USD'}}</p>
+        </div>
+    </div>
+</div>

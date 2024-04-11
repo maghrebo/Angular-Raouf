@@ -1,0 +1,12 @@
+#container {
+    width: 900px;
+    margin: 0 auto;
+}
+
+.card-title {
+    font-size: 30px;
+}
+
+.card_text {
+    font-size: 25px;
+}
