@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, Output, EventEmitter } from '@angular/core';
+
 
 @Component({
   selector: 'app-navigation',
@@ -9,16 +10,19 @@ import { Component } from '@angular/core';
 })
 export class NavigationComponent {
 
+  @Output() mandaDatiEvento = new EventEmitter<boolean>();
   
   mostra_home = false
   mostra_biglietti = false
 
   home() {
-    this.mostra_home = true;
+    this.mostra_home = true
+    this.mandaDatiEvento.emit(this.mostra_home);
   }
 
   biglietti() {
-    this.mostra_biglietti = true;
+    this.mostra_home = false
+    this.mandaDatiEvento.emit(this.mostra_biglietti);
   }
     
   
