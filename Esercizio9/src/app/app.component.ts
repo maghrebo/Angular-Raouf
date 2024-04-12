@@ -15,7 +15,7 @@ import { ListComponent } from './list/list.component';
 export class AppComponent {
   title = 'Esercizio9';
 
-  mostra_home = false
+  mostra_home = true
   mostra_biglietti = false
 
   onRiceviDati(value: any){
