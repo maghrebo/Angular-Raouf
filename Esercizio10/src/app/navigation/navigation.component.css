@@ -7,3 +7,15 @@ ul button {
     background-color: white;
     border: 0px;
 }
+
+.nav-link {
+    transition: all 0.3s ease; /* Aggiungi transizione per un effetto più fluido */
+  }
+  
+  .nav-link:hover {
+    transform: scale(1.1);
+    color: blue;
+    background-color: rgb(0, 217, 255);
+    border-radius: 10px;
+  }
+  
