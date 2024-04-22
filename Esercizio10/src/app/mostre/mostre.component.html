@@ -1,1 +1,23 @@
-<p>mostre works!</p>
+<br><br> 
+
+
+<div class="card mb-3 mx-auto" style="width: 840px" *ngFor="let mostra of mostre">
+    <div class="row g-0">
+      <div class="col-md-4">
+        <img src="{{ mostra.immagine }}" class="img-fluid rounded-start" alt="..." style="max-height: 500px">
+      </div>
+      <div class="col-md-8">
+        <div class="card-body">
+          <h5 class="card-title">{{ mostra.nome }}</h5>
+          <p class="card-text"><strong>Artista:</strong> </p>
+          <p class="card-text"><strong>Descrizione:</strong> </p>
+          <p class="card-text"><strong>Data Inizio:</strong> </p>
+          <p class="card-text"><strong>Data Fine:</strong> </p>
+          <div class="d-flex justify-content-center">
+            <button type="button" class="btn btn-primary btn-sm">Scopri di più</button>
+          </div>          
+        </div>
+      </div>
+    </div>
+  </div>
+  
