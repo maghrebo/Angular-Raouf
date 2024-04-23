@@ -4,13 +4,12 @@
 
 <ul class="nav justify-content-center">
     <li class="nav-item">
-      <button class="nav-link active" (click)="home()">HOME</button>
+      <button class="nav-link active" routerLink="/Home">HOME</button>
     </li>
     <li class="nav-item">
-      <button class="nav-link" (click)="mostre()">MOSTRE</button>
+      <button class="nav-link" routerLink="/Mostre">MOSTRE</button>
     </li>
 </ul>
 
 
-<app-introduction *ngIf="mostra_home"></app-introduction>
-<app-mostre *ngIf="mostra_mostre"></app-mostre>
+<router-outlet></router-outlet>
