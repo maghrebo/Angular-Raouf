@@ -1,20 +1,20 @@
 <br><br> 
 
 
-<div class="card mb-3 mx-auto" style="width: 840px" *ngFor="let mostra of mostre">
+<div class="card mb-3 mx-auto" style="width: 840px" *ngFor="let mostra of Mostre.mostre; index as i">
     <div class="row g-0">
       <div class="col-md-4">
         <img src="{{ mostra.immagine }}" class="img-fluid rounded-start" alt="..." style="max-height: 500px">
       </div>
       <div class="col-md-8">
         <div class="card-body">
-          <h5 class="card-title">{{ mostra.nome }}</h5>
+          <h5 class="card-title">{{ mostra.nome |uppercase}} </h5>
           <p class="card-text"><strong>Artista:</strong> {{mostra.artista}}</p>
           <p class="card-text"><strong>Descrizione:</strong> {{mostra.descrizione}}</p>
-          <p class="card-text"><strong>Data Inizio:</strong> {{mostra.datainizio}}</p>
-          <p class="card-text"><strong>Data Fine:</strong> {{mostra.datafine}}</p>
+          <p class="card-text"><strong>Data Inizio:</strong> {{mostra.datainizio |date: 'longDate'}}</p>
+          <p class="card-text"><strong>Data Fine:</strong> {{mostra.datafine |date: 'longDate'}}</p>
           <div class="d-flex justify-content-center">
-            <button type="button" class="btn btn-primary btn-lg">Scopri di più</button>
+            <button type="button" class="btn btn-primary btn-lg" routerLink="/Dettagli-Mostre/{{i}}">Scopri di più</button>
           </div>          
         </div>
       </div>

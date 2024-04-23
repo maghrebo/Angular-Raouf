@@ -1,0 +1,26 @@
+.container {
+    align-items: center;
+    text-align: center;
+}
+
+@font-face {
+    font-family: 'GriffinFont';
+    src: url('famig.ttf') format('ttf');
+    /* Aggiungi altri formati se necessario */
+    font-weight: normal; /* specifica il peso del font */
+    font-style: normal; /* specifica lo stile del font */
+}
+
+h1 {
+    font-family: 'GriffinFont';
+    font-size: 70px;
+}
+
+img {
+    height: 600px;
+}
+
+p {
+    font-family: 'GriffinFont';
+    font-size: 25px;
+}
