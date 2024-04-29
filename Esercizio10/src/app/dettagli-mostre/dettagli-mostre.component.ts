@@ -16,6 +16,9 @@ export class DettagliMostreComponent {
   nome: any;
   immagine: any;
   descrizione: any;
+  ulteriori_info: any;
+  anno: any;
+  artista: any;
 
   constructor(private route: ActivatedRoute, public provaService: ServizioDatiService){
  
@@ -26,9 +29,12 @@ export class DettagliMostreComponent {
   ngOnInit(){
  
     this.identificatore = this.route.snapshot.paramMap.get('id');
-    this.nome = this.provaService.mostre[this.identificatore].nome;
-    this.descrizione = this.provaService.mostre[this.identificatore].descrizione;
-    this.immagine = this.provaService.mostre[this.identificatore].immagine;
+    this.nome = this.provaService.dettagli_mostre[this.identificatore].nome;
+    this.descrizione = this.provaService.dettagli_mostre[this.identificatore].descrizione;
+    this.immagine = this.provaService.dettagli_mostre[this.identificatore].immagine;
+    this.ulteriori_info = this.provaService.dettagli_mostre[this.identificatore].ulteriori_info;
+    this.anno = this.provaService.dettagli_mostre[this.identificatore].anno;
+    this.artista = this.provaService.dettagli_mostre[this.identificatore].artista;
  
   }
 }

@@ -5,6 +5,11 @@
     <h1 class="titolo">{{nome |uppercase}}</h1>
     <br>
     <img [src]="immagine" alt="Immagine" class="foto">
+    <h3><strong>ARTISTA: </strong>{{artista}}</h3>
+    <h3><strong>ANNO: </strong>{{anno}}</h3>
     <br><br><br>
-    <p class="testo">{{descrizione |uppercase}}</p>
+    <h3>DESCRIZIONE: </h3>
+    <p class="testo" [innerHTML]="descrizione"></p>
+    <h3>ULTERIORI INFORMAZIONI: </h3>
+    <p class="testo" [innerHTML]="ulteriori_info"></p>
 </div>
