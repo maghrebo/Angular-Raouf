@@ -12,12 +12,14 @@
 }
 
 h1 {
-    font-family: 'GriffinFont';
     font-size: 70px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 img {
     height: 600px;
+    border-radius: 10px;
+    border: 3px black solid;
 }
 
 p {
